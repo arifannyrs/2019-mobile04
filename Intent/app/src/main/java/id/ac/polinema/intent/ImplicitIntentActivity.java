@@ -18,7 +18,7 @@ import java.io.IOException;
 public class ImplicitIntentActivity extends AppCompatActivity {
 
     private static final String TAG = ImplicitIntentActivity.class.getCanonicalName();
-    private static final int GALLERY_REQUEST_CODE = 1;
+    private static final int GALLERY_REQUEST_CODE= 1;
     private ImageView avatarImage;
 
     @Override
@@ -49,7 +49,7 @@ public class ImplicitIntentActivity extends AppCompatActivity {
         }
     }
 
-    public void handleChangeAvatar(View view) {
+    public void handelChangeAvatar(View view) {
         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
         startActivityForResult(intent, GALLERY_REQUEST_CODE);
     }
